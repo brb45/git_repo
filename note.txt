@@ -16,6 +16,10 @@ git branch demoBranch
 git checkout demoBranch
 git log --oneline
 
+git clean
+git reset
+git revert
+
 \\lphqqnap02\Business Development Backip\Public\
 
 
