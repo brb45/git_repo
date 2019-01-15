@@ -20,19 +20,20 @@ git clean
 git reset
 git revert
 
+git remote -v
+git remote remove origin
+git remote add origin https://github.com/brb45/repo2  
+
+
 \\lphqqnap02\Business Development Backip\Public\
 
-
-
-
-what the heell
-
+ 
 
 jsun@jsun-mbpw10 MINGW64 ~
 $ git version
 git version 2.16.1.windows.4
-
-
+git push -u origin master
+git pull origin master
 
 jsun@jsun-mbpw10 MINGW64 ~
 $ git help
