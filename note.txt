@@ -25,8 +25,16 @@ git remote remove origin
 git remote add origin https://github.com/brb45/repo2  
 
 pip install --user --upgrade pip
+sudo apt install python-pip
+python -V
+pip install xlrd  #excel
+sudo apt-get install tcpdump graphviz imagemagick python-gnuplot python-cryptography python-pyx
+
+#strace –p <pid> 
 
 \\lphqqnap02\Business Development Backip\Public\
+ssh root@192.168.4.62 rm -fr /root/Documents/test_d
+scp -r test_d/ root@192.168.4.62:/root/Documents
 
  
 
