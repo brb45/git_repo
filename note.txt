@@ -1,3 +1,4 @@
+#1/24/2019
 git init
 git clone https://github.com/brb45/sampleproject 
 git status  
@@ -43,6 +44,17 @@ $ git version
 git version 2.16.1.windows.4
 git push -u origin master
 git pull origin master
+
+#__________________________________________#
+Linux:
+nmap:10.0.2.15
+awk, sed
+
+#######
+#Python module
+subprocess.Popen
+from prettytable import PrettyTable
+
 
 jsun@jsun-mbpw10 MINGW64 ~
 $ git help
