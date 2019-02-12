@@ -1,4 +1,5 @@
 #1/24/2019
+#1. git . __________________________________________#
 git init
 git clone https://github.com/brb45/sampleproject 
 git status  
@@ -45,7 +46,7 @@ git version 2.16.1.windows.4
 git push -u origin master
 git pull origin master
 
-#__________________________________________#
+#2. Linux . __________________________________________#
 Linux:
 nmap:10.0.2.15
 awk, sed
@@ -61,7 +62,8 @@ activate       activate.ps1      easy_install      pip3    python3        wheel
 activate.csh   activate_this.py  easy_install-3.6  pip3.6  python3.6
 activate.fish  activate.xsh      pip               python  python-config
 (gmapenv) wuding@wuding-VirtualBox:~/Documents/env/gmapenv$ 
-#
+
+#3. networking . __________________________________________#
 10.*.*.*, 172.16–31.*.*, 192.168.*.*
 ping , nmap , ip route, iptables, traceroute
 
@@ -82,10 +84,11 @@ System messaging or system API enhancements and wrappers
 
 
 
-#######
+#5. Py test . __________________________________________#
 #Python module
 subprocess.Popen
 from prettytable import PrettyTable
+import pytest
 
 
 jsun@jsun-mbpw10 MINGW64 ~
