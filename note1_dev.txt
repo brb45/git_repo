@@ -1,11 +1,9 @@
-#1/24/2019
-
 # 12/27/2019
-# funny, this is supposed to be changed by branch: git_repo_dev
-
-#####1. git . __________________________________________#
+#1/24/2019
+#1. git . __________________________________________#
 git init
 git clone https://github.com/brb45/sampleproject 
+git status  
 git add b_file_op1.py b_file_op2.py
 git add .
 
@@ -29,7 +27,19 @@ git remote -v
 git remote remove origin
 git remote add origin https://github.com/brb45/repo2  
 
+pip install --user --upgrade pip
+sudo apt install python-pip
+python -V
+pip install xlrd  #excel
+sudo apt-get install tcpdump graphviz imagemagick python-gnuplot python-cryptography python-pyx
+
 #strace –p <pid> 
+
+\\lphqqnap02\Business Development Backip\Public\
+ssh root@192.168.4.62 rm -fr /root/Documents/test_d
+scp -r test_d/ root@192.168.4.62:/root/Documents
+
+ 
 
 jsun@jsun-mbpw10 MINGW64 ~
 $ git version
@@ -37,65 +47,10 @@ git version 2.16.1.windows.4
 git push -u origin master
 git pull origin master
 
-#####2. Linux . __________________________________________#
+#2. Linux . __________________________________________#
 Linux:
 nmap:10.0.2.15
-awk, sed,
-ps aux
-/usr/share?/usr/local  #software installed path
-
-apt --version
-apt 1.6.8 (amd64)
-
-ssh root@192.168.4.62 rm -fr /root/Documents/test_d
-scp -r test_d/ root@192.168.4.62:/root/Documents
-
-
-uname -a
-
-sudo apt-get install build-essential checkinstall
-sudo apt-get install build-essential
-sudo wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
-sudo tar xzf Python-3.7.2.tgz
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
-sudo apt install -y python3-pip
-
-litepoint@litepoint-Latitude-E6440:~$ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
-litepoint@litepoint-Latitude-E6440:~$ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
-litepoint@litepoint-Latitude-E6440:~$ sudo update-alternatives --config python3
-There are 2 choices for the alternative python3 (providing /usr/bin/python3).
-
-  Selection    Path                Priority   Status
-------------------------------------------------------------
-* 0            /usr/bin/python3.6   1         auto mode
-  1            /usr/bin/python3.6   1         manual mode
-  2            /usr/bin/python3.7   1         manual mode
-
-Press <enter> to keep the current choice[*], or type selection number: 2
-
-sudo apt install python3-venv
-
-python3 -m venv env
-$ source env/bin/activate
-
-mkdir -p /just/one/dir
-mkdir -p -- a/foo b/bar a/baz
-
-######3. Python
-
-sudo apt install python-pip
-sudo apt-get install tcpdump graphviz imagemagick python-gnuplot python-cryptography python-pyx
-
-python -V
-python --version
-
-pip install --user --upgrade pip
-pip install xlrd  #excel
-
-C:\Users\jsun\Documents\django\bookmarks_test\bookmarks>python -m venv bookmarks_env
-pip list
-
+awk, sed
 ##Setup virtualenv
 wuding@wuding-VirtualBox:~/Documents$ mkdir env
 wuding@wuding-VirtualBox:~/Documents$ cd env/
@@ -109,7 +64,7 @@ activate.csh   activate_this.py  easy_install-3.6  pip3.6  python3.6
 activate.fish  activate.xsh      pip               python  python-config
 (gmapenv) wuding@wuding-VirtualBox:~/Documents/env/gmapenv$ 
 
-######4. networking . __________________________________________#
+#3. networking . __________________________________________#
 10.*.*.*, 172.16–31.*.*, 192.168.*.*
 ping , nmap , ip route, iptables, traceroute
 
@@ -125,7 +80,12 @@ System\Environment handling
 Application mapping functions
 System messaging or system API enhancements and wrappers
 
-######5. Py test . __________________________________________#
+
+
+
+
+
+#5. Py test . __________________________________________#
 #Python module
 subprocess.Popen
 from prettytable import PrettyTable
@@ -177,6 +137,18 @@ nch
 'git help -a' and 'git help -g' list available subcommands and some
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
+
+jsun@jsun-mbpw10 MINGW64 ~
+$ cls
+bash: cls: command not found
+
+jsun@jsun-mbpw10 MINGW64 ~
+$ gitclear
+bash: gitclear: command not found
+
+jsun@jsun-mbpw10 MINGW64 ~
+$ clear
+
 
 jsun@jsun-mbpw10 MINGW64 ~
 $ git help -a
@@ -372,9 +344,6 @@ drwxr-xr-x 1 jsun 1049089    0 Jan  7 13:46 .git/
 -rw-r--r-- 1 jsun 1049089 1733 Jan  7 13:45 b_file_op6.py
 -rw-r--r-- 1 jsun 1049089 2704 Jan  7 13:45 b_file_op7.py
 
-
-#####
-__________________________________________________________________________________
 jsun@jsun-mbpw10 MINGW64 ~/Documents/git_repo
 $ mkdir test3
 
@@ -386,7 +355,6 @@ $ ls -al
 total 0
 drwxr-xr-x 1 jsun 1049089 0 Jan  7 14:08 ./
 drwxr-xr-x 1 jsun 1049089 0 Jan  7 14:08 ../
-
 
 jsun@jsun-mbpw10 MINGW64 ~/Documents/git_repo/test3
 $ git clone https://github.com/brb45/sampleproject
@@ -405,7 +373,24 @@ total 0
 drwxr-xr-x 1 jsun 1049089 0 Jan  7 14:09 ./
 drwxr-xr-x 1 jsun 1049089 0 Jan  7 14:08 ../
 drwxr-xr-x 1 jsun 1049089 0 Jan  7 14:09 sampleproject/
-__________________________________________________________________________________
+
+jsun@jsun-mbpw10 MINGW64 ~/Documents/git_repo/test3
+$ ls -al sampleproject/
+total 22
+drwxr-xr-x 1 jsun 1049089    0 Jan  7 14:09 ./
+drwxr-xr-x 1 jsun 1049089    0 Jan  7 14:09 ../
+drwxr-xr-x 1 jsun 1049089    0 Jan  7 14:09 .git/
+-rw-r--r-- 1 jsun 1049089  145 Jan  7 14:09 .gitignore
+-rw-r--r-- 1 jsun 1049089  420 Jan  7 14:09 .travis.yml
+drwxr-xr-x 1 jsun 1049089    0 Jan  7 14:09 data/
+-rw-r--r-- 1 jsun 1049089 1100 Jan  7 14:09 LICENSE.txt
+-rw-r--r-- 1 jsun 1049089  141 Jan  7 14:09 MANIFEST.in
+-rw-r--r-- 1 jsun 1049089 1742 Jan  7 14:09 README.md
+drwxr-xr-x 1 jsun 1049089    0 Jan  7 14:09 sample/
+-rw-r--r-- 1 jsun 1049089  677 Jan  7 14:09 setup.cfg
+-rw-r--r-- 1 jsun 1049089 8501 Jan  7 14:09 setup.py
+drwxr-xr-x 1 jsun 1049089    0 Jan  7 14:09 tests/
+-rw-r--r-- 1 jsun 1049089 1191 Jan  7 14:09 tox.ini
 
 jsun@jsun-mbpw10 MINGW64 ~/Documents/git_repo/test3
 $ ls -al sampleproject/
